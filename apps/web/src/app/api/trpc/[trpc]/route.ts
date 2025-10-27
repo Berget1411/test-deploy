@@ -1,9 +1,8 @@
-import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
-import { appRouter } from "@test-deploy/api/routers/index";
 import { createContext } from "@test-deploy/api/context";
-import { NextRequest } from "next/server";
+import { appRouter } from "@test-deploy/api/routers/index";
+import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 
-function handler(req: NextRequest) {
+function handler(req: Request) {
 	return fetchRequestHandler({
 		endpoint: "/api/trpc",
 		req,

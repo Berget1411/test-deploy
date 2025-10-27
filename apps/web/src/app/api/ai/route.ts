@@ -1,5 +1,5 @@
 import { google } from "@ai-sdk/google";
-import { streamText, type UIMessage, convertToModelMessages } from "ai";
+import { convertToModelMessages, streamText, type UIMessage } from "ai";
 
 export const maxDuration = 30;
 

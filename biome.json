@@ -24,7 +24,8 @@
 			"!**/.alchemy",
 			"!**/.svelte-kit",
 			"!**/wrangler.jsonc",
-			"!**/.source"
+			"!**/.source",
+			"!**/index.css"
 		]
 	},
 	"formatter": {
@@ -65,6 +66,12 @@
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "double"
+		}
+	},
+	"css": {
+		"parser": {
+			"cssModules": false,
+			"allowWrongLineComments": true
 		}
 	}
 }
